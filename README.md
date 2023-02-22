@@ -60,7 +60,7 @@ We will have:
     
     5. If there is no input from a human within the specified time limit, the code will move on to the next customer and the next product (you can change this to have a specific rule e.g no for any price below customer minimum price
                                                                                                                                            
-The goal of the agent is to learn a policy that maximizes the total reward over time, which is the sum of the revenue earned from selling the products minus the cost of setting the prices.
+The goal of the agent is to learn a policy that maximizes the total reward over time, which is the sum of the revenue earned from selling the products minus the cost of setting the prices (the cost of setting the price is not explicitly modeled, but rather accounted for indirectly through the human input).
 
 The code is implemented in Python and uses the NumPy and datetime libraries. It consists of several functions and a main loop that runs the simulation and updates the Q-values for each state-action pair.
 
